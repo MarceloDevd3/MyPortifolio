@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    font-size: 1.25em;
+    font-family: "Roboto", sans-serif;
+}
+
+body.dark {
+    background: #000;
+    transition: background ease-in-out 1s;
+}
+
+body.dark  i {
+    color: #fff;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+
+nav button {
+    border: none;
+    background-color: transparent;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 1.2em;
+    height: 50px;
+}
+
+#logo i {
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.navbar .navbar-list {
+    display: none;
+}
+
+.navbar .navbar-list.active {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.navbar.dark {
+    color: #fff;
+}
+
+.navbar-list {
+    padding-top: 7em;
+}
+
+.navbar-list .nav-item {
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: 1.1em 1em;
+}
+
+
+.btn {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-toggle {
+    margin-top: .5em;
+}
+
+ i {
+    font-size: 1.5em;
+}
+
+.row button {
+   margin: 0 .5em;
+}
+
+
+
+
+/*Hero*/
+
+.banner-img  {
+    padding: 1em;
+}
+
+#banner--img {
+    max-width: 100%;
+}
+
+
+.Home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.Home > .info {
+    padding: 1em;
+} 
+
+.info .hero-title  {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.info .about-me {
+    margin-bottom: 2em;
+}
+
+.Home .hero-title.dark {
+    color: #fff;
+    transition: color ease-in-out 1s;
+}
+
+.Home .about-me.dark {
+    color: #fff;
+    transition: color ease-in-out 1s;
+}
+
+
+.btn-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1.2em;
+    margin: 1em 0;
+}
+
+.btn-item {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-orange {
+    background: #fb353a;
+}
+
+.btn-orange:hover {
+    background: #e1555a;
+    transition:  background ease-in .5s;
+}
+
+.btn-gray {
+    background: #34354e;
+}
+
+.btn-gray:hover {
+    background: #484a61;
+    transition:  background ease-in .5s;
+}
+
+
+/*tecnologia rows*/
+
+.line-of-tec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.tec-item > i {
+    font-size: 2em;
+    margin: 0.2em .5em ;
+}
+
+/*magic colors */
+
+
+.html i:hover {
+    color: #FF5733;
+}
+
+.javascript i:hover {
+   color: #FFFF00;
+}
+
+.css i:hover {
+   color:#2e2ed0;
+}
+
+.react i:hover {
+    color: #3498DB;    
+}
+
+.sass i:hover {
+    color: #eb98a6;
+    
+}
+.bootstrap i:hover{
+    color: rgb(159, 34, 159);
+}
+
+
+/*projects*/
+
+.container {
+    text-align: center;
+    font-size: 2em;
+    margin:  2em 0;
+}
+
+.container .title {
+    padding: 1em 0;
+}
+
+.container .title.dark {
+    color: #fff;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns:  1fr ;
+    grid-template-rows: 1fr;
+    row-gap: 0.1em;
+}
+
+.project-item  a > img {
+    padding: .5em;
+    max-width: 100%;
+}
+
+.row-icons {
+    display: flex;
+}
+
+.row-icons a i {
+    margin: 0 1em;
+  color: #000;
+}
+
+.copyright{
+    font-size: 1em;
+    margin-right: 0.5em;
+    color: #000;
+    text-decoration: none;
+}
+
+.copyright i {
+    font-size: 1em;
+}
+
+
+
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+
+.copyright.dark {
+    color: #fff;
+}
+
+.row-icons {
+    margin: 1em 0;
+}
+
+.row-icons > .github.dark i {
+  color: #fff;
+}
+
+.row-icons > .linkedin.dark i {
+    color: #fff;
+  }
+
+
+
+
+@media (min-width:1024px) {
+
+    
+    .navbar .navbar-list.active, .navbar .navbar-list {
+        position: absolute;
+        top: -13%;
+        left: 0;
+        width: 90%;
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }   
+
+    .btn-toggle {
+        position: relative;
+        top: 10px;
+    }
+
+    .navbar-list .nav-item {
+        font-size: 1.1em;
+        margin: 0 1.7em;
+    }
+    
+    .btn-menu-toggle {
+        display: none;
+    }
+
+    
+    .Home {
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+        margin-top: 2em;
+    } 
+    
+
+    .btn-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+        row-gap: 1.2em;
+        margin: 0 1em;
+    }
+
+    .btn-orange {
+        margin-left: -1em;
+    }
+    
+
+    
+    
+.Home > .info {
+    width: 500px;
+} 
+
+.info .hero-title  {
+    font-size: 1.7em;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns:  1fr 1fr  ;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
+}
+
+.project-item a > img ,.project-item > img {
+    max-width: 500px;
+}
+
+
+
+}
+

@@ -1,0 +1,194 @@
+
+.Home {
+    padding: 1.7em;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-img #banner--img {
+    max-width: 100%;
+}
+
+.Home .hero-title {
+    width: 300px;
+    line-height: 35px;
+    font-size: 2em;
+}
+
+.Home .hero-title.dark {
+    color: #fff;
+    transition: color ease-in-out 1s;
+}
+
+.Home .about-me {
+    width: 375px;
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+
+.Home .about-me.dark {
+    color: #fff;
+    transition: color ease-in-out 1s;
+}
+
+
+
+.btn-row {
+    display: flex;
+}
+
+.btn-row >  button + button {
+    margin-left: 10px;
+}
+
+.btn-row > button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-weight: 700;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.btn-orange {
+    background: #fb353a;
+}
+
+.btn-orange:hover {
+    background: #e1555a;
+    transition:  background ease-in .5s;
+}
+
+.btn-gray {
+    background: #34354e;
+}
+
+.btn-gray:hover {
+    background: #484a61;
+    transition:  background ease-in .5s;
+}
+
+.line-of-tec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.line-of-tec > .tec-item {
+    margin: 0 1em;
+}
+
+.tec-item i {
+    font-size: 2.5em;
+}
+
+.html i:hover {
+    color: #FF5733;
+}
+
+.javascript i:hover {
+   color: #FFFF00;
+}
+
+.css i:hover {
+   color:#2e2ed0;
+}
+
+.react i:hover {
+    color: #3498DB;    
+}
+
+.sass i:hover {
+    color: #eb98a6;
+    
+}
+.bootstrap i:hover{
+    color: rgb(159, 34, 159);
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.project-item > img {
+    width: 500px;
+}
+
+.container {
+    display: flex;
+}
+
+
+
+@media (min-width: 1024px) {
+
+
+    header {
+        padding: 2em;
+    }
+    .navbar-list {
+        padding-top: 0;
+    }
+
+    .navbar-list .nav-item {
+        font-weight: 500;
+        font-size: 1.1em;
+        margin: 2em 1em;
+    }
+
+    .navbar .navbar-list.active, .navbar .navbar-list {
+        position: absolute;
+        top: 17px;
+        left: 0;
+        width: 90%;
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }   
+
+    .row {
+        margin-top: .5em;
+     }
+
+     .btn-menu-toggle {
+        display: none;
+     }
+
+     
+.Home {
+    padding:1.5em 1em;
+    margin-top: 2.7em;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Home .about-me {
+    width: 500px;
+    margin: 1.2em 0;
+    font-size: 1.5em;
+}
+
+.Home .hero-title {
+    width: 400px;
+    line-height: 45px;
+    font-size: 2.2em;
+}
+
+.info {
+    margin-right: 2em;
+}
+
+.banner-img #banner--img {
+    max-width: 75%;
+}
+
+
+
+}
